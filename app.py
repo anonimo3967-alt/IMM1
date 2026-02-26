@@ -19,11 +19,11 @@ try:
 except:
     pass
 
-st.subheader("Una pequeña Fábula.")
-st.write('¡Ay! -dijo el ratón-. El mundo se hace cada día más pequeño. Al principio era tan grande que le tenía miedo. '  
-         ' Corría y corría y por cierto que me alegraba ver esos muros, a diestra y siniestra, en la distancia. ' 
-         ' Pero esas paredes se estrechan tan rápido que me encuentro en el último cuarto y ahí en el rincón está '  
-         ' la trampa sobre la cual debo pasar. Todo lo que debes hacer es cambiar de rumbo dijo el gato...y se lo comió. ' 
+st.subheader("Illojuan y los cinq mosqueteros")
+st.write('¡Ay! -dijo Illojuan-. Los streamers son reemplazados por intelecto artificial '  
+         ' Illojuan entonces decidio hacer un stream de subnautica ' 
+         ' Y el mundo canto al son de sus gritos de leviatan '  
+         ' Porque el otro leviatan lo vio y se lo comio ' 
          '  '
          ' Franz Kafka.'
         
@@ -35,11 +35,13 @@ text = st.text_area("Ingrese El texto a escuchar.")
 tld='com'
 option_lang = st.selectbox(
     "Selecciona el lenguaje",
-    ("Español", "English"))
+    ("Español", "English", "Français"))
 if option_lang=="Español" :
     lg='es'
 if option_lang=="English" :
     lg='en'
+if option_lang=="Français":
+    lg='fr'
 
 def text_to_speech(text, tld,lg):
     
