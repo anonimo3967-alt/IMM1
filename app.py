@@ -20,10 +20,10 @@ except:
     pass
 
 st.subheader("Illojuan y los cinq mosqueteros")
-st.write('¡Ay! -dijo Illojuan-.\nLos streamers son reemplazados por intelecto artificial '  
-         ' Illojuan entonces decidio hacer un stream de subnautica ' 
-         ' Y el mundo canto al son de sus gritos de leviatan '  
-         ' Porque el otro leviatan lo vio y se lo comio ' 
+st.write('''¡Ay! -dijo Illojuan-. Los streamers son reemplazados por intelecto artificial. '''  
+         ' Illojuan entonces decidio hacer un stream de subnautica. ' 
+         ' El mundo canto al son de sus gritos de leviatan. '  
+         ' Porque el otro leviatan lo vio y se lo comio. ' 
          '  '
          ' Franz Kafka.'
         
