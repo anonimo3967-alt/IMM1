@@ -29,8 +29,8 @@ st.write('¡Ay! -dijo Illojuan-. Los streamers son reemplazados por intelecto ar
         
         )
            
-st.markdown(f"Quieres escucharlo?, copia el texto")
-text = st.text_area("Ingrese El texto a escuchar.")
+st.markdown(f"Quieres escuchar las palabras de Illojuan?, copia el texto")
+text = st.text_area("¿que es lo que quieres escuchar?")
 
 tld='com'
 option_lang = st.selectbox(
@@ -56,7 +56,7 @@ def text_to_speech(text, tld,lg):
 
 #display_output_text = st.checkbox("Verifica el texto")
 
-if st.button("convertir a Audio"):
+if st.button("Convierte a audio (magia hush hush)"):
      result, output_text = text_to_speech(text, 'com',lg)#'tld
      audio_file = open(f"temp/{result}.mp3", "rb")
      audio_bytes = audio_file.read()
