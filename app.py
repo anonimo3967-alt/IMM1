@@ -11,7 +11,7 @@ st.title("Conversión de Texto a Audio")
 image = Image.open('Illojuan.jpeg')
 st.image(image, width=350)
 with st.sidebar:
-    st.subheader("Esrcibe y/o selecciona texto para ser escuchado.")
+    st.subheader("Ibai es un masón")
 
 
 try:
@@ -35,13 +35,15 @@ text = st.text_area("¿que es lo que quieres escuchar?")
 tld='com'
 option_lang = st.selectbox(
     "Selecciona el lenguaje",
-    ("Español", "English", "Français"))
+    ("Español", "English", "Français", "Aleman"))
 if option_lang=="Español" :
     lg='es'
 if option_lang=="English" :
     lg='en'
 if option_lang=="Français":
     lg='fr'
+if option_lang=="Aleman":
+    lg='de'
 
 def text_to_speech(text, tld,lg):
     
